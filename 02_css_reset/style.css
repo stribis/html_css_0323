@@ -1,0 +1,57 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Element Selector */
+body {
+  background: red;
+  color: white;
+}
+
+/* Multiple Elements */
+a, p {
+  font-family: monospace;
+}
+
+section a {
+  color: lime;
+}
+
+.bold-me {
+  font-weight: bolder;
+}
+
+#link {
+  text-decoration: none;
+}
+
+h2[title] {
+  background: blue;
+}
+
+section > a {
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+  background: gold;
+  color: black;
+}
+
+.item + li {
+  background: hotpink;
+} 
+
+/* .item ~ li {
+  background: hotpink;
+}  */
+
+.smile {
+  font-size: 2rem;
+  color: blueviolet;
+}
+
+.smile::after {
+  content: "😀";
+}

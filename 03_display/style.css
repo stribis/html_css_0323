@@ -1,0 +1,13 @@
+
+.blocky {
+  background: red;
+}
+
+.blocky > span {
+  background: hotpink;
+}
+
+.blocky > img {
+  width: 100px;
+  height: 100px;
+}

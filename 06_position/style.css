@@ -1,0 +1,47 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 300vh;
+}
+
+.container {
+  width: 800px;
+  height: 500px;
+  background: #222;
+  position: relative;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  border: solid 1px red;
+}
+
+.static {
+  z-index: -1;
+}
+
+.relative {
+  position: relative;
+  left: 100px;
+  /* top: 100px; */
+}
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+}

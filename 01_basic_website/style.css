@@ -1,0 +1,59 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */ 
+
+body {
+  font-family: sans-serif;
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #222222d6;
+  padding: 1.5rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav > ul a { 
+  color: #bbb;
+}
+
+nav > ul a:hover { 
+  color: #fff;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14rem 0;
+}
+
+header h1 {
+  font-family: monospace;
+  font-size: 8rem;
+}

@@ -1,0 +1,36 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  height: 30vh;
+  background: #222;
+}
+
+main {
+  height: 60vh;
+  width: 75%;
+  background: #22ff22;
+  float: left;
+}
+
+aside {
+  height: 60vh;
+  width: 25%;
+  background: #226622;
+  float: right;
+}
+
+footer {
+  height: 10vh;
+  background: #2222ff;
+  clear: both;
+}
+
+div {
+  height: 50vh;
+  background: #222;
+}
