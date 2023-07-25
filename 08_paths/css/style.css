@@ -1,0 +1,10 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.foo {
+  background-image: url("../images/287.jpeg");
+}

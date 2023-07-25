@@ -1,0 +1,153 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.flag {
+  width: 400px;
+  height: 250px;
+  border: solid 1px black;
+}
+
+.switzerland {
+  width: 400px;
+  height: 400px;
+}
+
+  /*Colombian Flag */
+
+  /*
+  TIPS: 
+  - Give each color a start and a stop to create get rid of the gradient and just show the colors
+  - Remember that the first color does not need a start since the start is always going to be 0% by default
+  - Remember that the last color does not need a stop since the stop is always going to be 100% by default
+  
+  Example:
+  linear-gradient(firstStop, secondStart, secondStop, thirdStart)
+  */
+
+.colombia{
+  background-image: linear-gradient(#FCD116 50%, #003893 50%, #003893 75%, #CE1126 75%)
+}
+
+  /*Italy Gradient */
+.italy{
+  background-image: linear-gradient(to right, #009246 33%, #fff 33% 66%, #CE2B37 66%)
+}
+
+  /*Tanzania Gradient */
+.tanzania{
+  background-image: linear-gradient(
+    to bottom right, 
+    #1EB53A 35%,
+    #FCD116 35%, #FCD116 39%, 
+    #000000 39%, #000000 61%,
+    #FCD116 61%, #FCD116 65%,
+    #00A3DD 65%
+  )
+}
+
+  /*Murica Gradient */
+.murica{
+  background: repeating-linear-gradient(#B22234, #B22234 7.69%, #fff 7.69%, #fff 15.38%);
+  position: relative;
+}
+
+.murica::after{
+  content: '';
+  background: #3C3B6E;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 53.85%;
+  width: 40%;
+}
+
+  /*Zimbabwe*/
+.zimbabwe{
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom, 
+    #006400 calc(1/7 * 100%), 
+    #FFD200 calc(1/7 * 100%), #FFD200 calc(2/7 * 100%), 
+    #D40000 calc(2/7 * 100%), #D40000 calc(3/7 * 100%),
+    #000 calc(3/7 * 100%), #000 calc(4/7 * 100%),
+    #D40000 calc(4/7 * 100%), #D40000 calc(5/7 * 100%),
+    #FFD200 calc(5/7 * 100%), #FFD200 calc(6/7 * 100%),
+    #006400 calc(6/7 * 100%)
+  ) 
+}
+
+/* .zimbabwe::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 0;
+  height: 0;
+  border-top: 220px solid transparent;
+  z-index: 2;
+  border-left: 240px solid #fff;
+  border-bottom: 220px  solid transparent;
+  transform: translate(0, -50%); 
+}
+
+.zimbabwe:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width:0px;
+  height: 0;
+  border-top: 230px solid transparent;
+  z-index: 1;
+  border-left: 250px solid #000;
+  border-bottom: 230px  solid transparent;
+  transform: translate(0, -50%); 
+}  */
+
+  /*Swiss Flag*/
+
+.switzerland{
+  background-color: #D52B1E;
+  position: relative;
+  min-width: 300px;
+  min-height: 300px;
+  align-self: center;
+  justify-self: center;
+  
+}
+
+.switzerland:before{
+  content: '';
+  background: #fff;
+  width: calc(6/32 * 100%);
+  height: calc(20/32 * 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.switzerland:after{
+  content: '';
+  background: #fff;
+  height: calc(6/32 * 100%);
+  width: calc(20/32 * 100%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1
+}

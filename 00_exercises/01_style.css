@@ -1,0 +1,59 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-weight: 200;
+}
+
+body {
+  background: #212121;
+  font-family: Helvetica, sans-serif;
+  color: #fff;
+}
+
+#exercise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+hr {
+  border-color: #6666666d;
+  margin: 2rem 0;
+  width: 80%;
+}
+
+.exercise-container {
+  border: solid 1px #333;
+  border-radius: 10px;
+  max-width: 90%;
+  min-width: 500px;
+  height: 300px;
+  background: #111;
+  padding: 5px;
+}
+
+.exercise-container .item {
+  width: 50px;
+  height: 50px;
+  background: #999999;
+  border: solid 1px #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Your code here 👇*/
+
