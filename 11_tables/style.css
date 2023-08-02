@@ -1,0 +1,30 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
+
+.table_1 td, .table_1 th {
+  border: solid 1px black;
+}
+
+.table_3 {
+  border: solid 1px black;
+}
+
+.table_3 td{
+  width: 50px;
+  height: 50px;
+}
+
+.table_3 tr:nth-child(odd) td:nth-child(even) {
+  background: black;
+}
+
+.table_3 tr:nth-child(even) td:nth-child(odd) {
+  background: black;
+}
