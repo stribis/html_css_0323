@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+img {
+  margin: 2rem;
+  padding: 2rem;
+  border: solid 1px darkgray;
+
+  box-shadow: 2px 2px 2px black, 
+  4px 4px 2px white, 
+  6px 6px 2px black, 
+  8px 8px 2px white, 
+  10px 10px 2px black,
+  12px 12px 2px white, 
+  14px 14px 2px black;
+}
+
+.mybear {
+  border: solid 3px red;
+  background-image: url('http://placebear.com/1000/1500');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50px ;
+  width: 600px;
+  height: 600px;
+} 
