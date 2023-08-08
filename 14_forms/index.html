@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Forms</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section id="contact">
     <h2>Contact Us :D</h2>
     <form>
       <label for="first-name">First Name</label>
-      <input type="email" id="first-name" placeholder="First Name">
+      <input type="text" id="first-name" placeholder="First Name">
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" placeholder="Last Name">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
       <button type="submit">Send Form</button>
     </form>
   </section>

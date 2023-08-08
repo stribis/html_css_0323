@@ -1,0 +1,64 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body { 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, hotpink, darkblue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact form {
+  min-width: 500px;
+  padding: 4rem;
+  border-radius: 1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+}
+
+#contact textarea {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0.4rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#contact input {
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.5rem;
+}
+
+#contact button[type="submit"] {
+  align-self: flex-start;
+  background: linear-gradient(hotpink, hotpink);
+  color: #fff;
+  padding: 0.5rem 0.7rem;        
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#contact button[type="submit"]:hover {
+  background: linear-gradient(hotpink, pink);
+} 
+
