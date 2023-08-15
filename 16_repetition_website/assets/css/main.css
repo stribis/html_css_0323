@@ -1,0 +1,32 @@
+/* Typography */
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora/Lora-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+/* Variables */
+
+:root {
+  --primary-font-color: #212529;
+  --secondary-color: #e6a756;
+  --primary-background-color: #f6e1c5;
+  --secondary-background-color: rgba(47, 23, 15, 0.9);
+  --body-font: 'Lato', serif;
+  --heading-font: 'Raleway', sans-serif;
+}
+
+/* Body */
+
+body {
+  font-size: 1rem;
+  font-family: var(--body-font);
+  line-height: 1.5;
+  color: var(--primary-font-color);
+  background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url(../images/bg.jpeg);
+}

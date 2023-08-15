@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock</title>
+  <style>
+    /* Small Reset */
+    *::before, *::after, * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .clock {
+      width: 500px;
+      height: 500px;
+      border: solid 2px black;
+      border-radius: 50%;
+      position: relative;
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(255, 0, 0, 0.464);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .hand {
+      width: 10px;
+      height: 250px;
+      background-color: blue;
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: seconds 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transform-origin: center bottom;
+    }
+
+    @keyframes seconds {
+      from {transform: translateX(-50%) rotate(0) ;}
+      to {transform: translateX(-50%) rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="dot">
+      <div class="hand">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

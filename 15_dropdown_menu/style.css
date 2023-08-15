@@ -1,0 +1,76 @@
+/* Small Reset */
+*::before, *::after, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgba(255, 105, 180, 0.459), rgba(0, 0, 139, 0.53));
+}
+
+nav {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  text-shadow: 1px 1px black;
+}
+
+nav menu {
+  list-style: none;
+}
+
+
+nav > menu {
+  position: relative;
+  display: flex;
+  gap: 5rem;
+  width: 100%;
+  justify-content: center ;
+  padding: 0 5rem;
+}
+
+nav > menu >li {
+  height: 100%;
+  padding: 3rem 0;
+}
+
+.dropdown_toggle {
+  position: relative;
+
+}
+
+nav > menu menu {
+  border: solid 1px white;
+  position: absolute;
+  top: calc(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+nav > menu menu li {
+  min-width: 200px;
+  text-align: center;
+  padding: 3rem;
+}
+
+
+
+.dropdown_menu {
+  display: none;
+}
+.dropdown_toggle:hover .dropdown_menu {
+  display: block;
+}

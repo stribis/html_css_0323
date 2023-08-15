@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: 2s;
+    }
+
+    .color:hover {
+      background: blue;
+    }
+
+    .move:hover {
+      transform: translateX(200px);
+      background: yellow;
+    }
+
+    .rotate:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <p>Color</p>
+  <div class="box color"></div>
+  <p>Move</p>
+  <div class="box move"></div>
+  <p>Rotate</p>
+  <div class="box rotate"></div>
+</body>
+</html>
